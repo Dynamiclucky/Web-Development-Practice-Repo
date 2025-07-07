@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.container{
+			width: 100vw;
+			height: 100vh;
+			background-color: skyblue;
+			border: 20px solid black;
+			animation-name: virat;
+			animation-duration:0.3s ;
+			animation-iteration-count: infinite;
+		}
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		.box{
+			width: 350px;
+			height: 80px;
+			background-color: black;
+			border: 3px solid  red;
+			border-radius: 40px;
+			margin: 20px;
+			position: relative;
+			animation-name:doremon ;
+			animation-iteration-count:infinite ;
+			animation-duration: 0s;
+			text-align: center;
+			color: whitesmoke;
+			outline-style: dashed;
+			outline-width: thick;
+			animation-play-state: ;
+		}
+		@keyframes virat{
+			0%{
+				background-color: blue;
+			}
+			25%{
+				background-color: pink;
+			}
+			50%{
+				background-color: orangered;
+			}
+			75%{
+				background-color: yellowgreen;
+			}
+			100%{
+				background-color: darkblue;
+			}
+		}
+		@keyframes doremon{
+			from{
+					top: 0 px;
+					left: 0 px;
+			}
+			to{
+					top: 0 px;
+					left: 900px;
+			}
+		}
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>animation in CSS</title>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			DJ LUCKY
+		</div>
+	</div>
+</body>
+</html>
